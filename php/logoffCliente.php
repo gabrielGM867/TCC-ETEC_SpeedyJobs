@@ -1,0 +1,13 @@
+<?php
+session_start();
+unset($_SESSION['codiCliente']);
+unset($_SESSION['usuarioCliente']);
+unset($_SESSION['nome_usuarioCliente']);
+unset($_SESSION['dataNasCliente']);
+unset($_SESSION['sexCliente']);
+unset($_SESSION['fotoCliente']);
+unset($_SESSION['codiClienteChat']);
+unset($_SESSION['loginCliente']);
+unset($_SESSION['nomeCompletoCliente']);
+header('location:../index.php');
+?>

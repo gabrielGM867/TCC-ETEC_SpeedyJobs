@@ -1,0 +1,320 @@
+﻿@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  box-sizing: border-box; 
+}
+
+body{
+	margin-top:0px;
+	padding: 0;
+  background: linear-gradient(#f6f6f7, #a6b1bb);
+	background-size: cover;
+	font-family: sans-serif;
+	color: white;
+	text-decoration: none;
+  outline:none;
+}
+p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+h1, .h1{
+  font-size: 3.5rem;
+  text-align:center;
+  margin-bottom: 53px;
+  color: black;
+  text-decoration: none;
+  outline:none;
+  font-family: 'Raleway', sans-serif;
+}
+h1 a{
+  text-decoration: none;
+}
+h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	color: white;
+	text-align: center;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+
+}
+::-webkit-scrollbar-thumb {
+  background: #6a6e73;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a6b1bb;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+
+/* Carregando */
+.corpoCarregado{
+  display:none;
+}
+.carregando{
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height: 100%;
+  background: url(../Imagens/carregando.gif) 50% 50% no-repeat;
+  background-color:white;
+}
+/*-------------------------------------------------------------*/
+
+
+/*-----FORMULARIO DE LOGIN-----*/
+.form-signin {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+::placeholder{
+  color: rgba(255,255,255,.5);
+}
+.loginBox{
+  box-sizing: border-box;
+  background: #464646;
+  padding: 40px 40px;
+  padding-bottom: 3px ;
+  padding-top: 10px ;
+  margin-bottom: 110px;
+  border-radius: 50px 0px 50px 0px ;
+  border: 3px solid #292929;
+}
+.user{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left:32%; 
+  margin-bottom: 30px;
+}
+.g-recaptcha{
+  margin-left:-6px;
+}
+
+.caja {
+   border:1px solid #d9d9d9;
+   height:30px;
+   overflow: hidden;
+   width: 230px;
+   position:relative;
+}
+select {
+   background: white;
+   border: none;
+   font-size: 14px;
+   height: 30px;
+   padding: 5px;
+   width: 250px;
+}
+select:focus{ outline: none;}
+
+.caja::after{
+  content:"\025be";
+  display:table-cell;
+  padding-top:2px;
+  text-align:center;
+  width:30px;
+  height:30px;
+  background-color:#d9d9d9;
+  position:absolute;
+  top:0;
+  right:0px;  
+  pointer-events: none;
+}
+
+
+/*-----CAMPO DIGITA INFORMAÇOES-----*/
+.form-control {
+  display: block;
+  width: 100%;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  color: #fff;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+  box-shadow: none;
+}
+
+
+
+
+
+/*-----BOTAO-----*/
+.btn-success {
+  width: 100%;
+  color: #fff;
+  border-color:rgb(15, 119, 192);
+  background-color: rgb(15, 119, 192);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color:rgb(18, 142, 229);
+}
+.btn-success:focus{
+  box-sizing:none;
+}
+
+
+
+/*-----ALERT-----*/
+.alert {
+  padding: 20px;
+  background-color: #f44336; 
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #f44336; 
+}
+.closebtn:hover {
+  color: black;
+}
+
+
+/*-------MODAL------*/
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+}
+.closeModal {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+.closeModal:after {
+  content: "\d7";
+}
+.closeModal:hover { 
+  background: #f00; 
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.textos{
+  color: black;
+}
+.textos h2{
+  color: black;
+}
+.textos input[type="text"]{
+  border: none;
+  border: 1px solid black;
+  background: transparent;
+  outline: none;
+  color: black;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 50px;
+  width: 300px;
+}
+.textos input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 100px;
+  color: #fff;
+  font-size: 16px;
+  background:rgb(15, 119, 192);
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 10px; 
+}
+.textos input[type="submit"]:hover
+{
+  background-color: rgb(18, 142, 229);
+}
+#email::placeholder{
+  color:grey
+}

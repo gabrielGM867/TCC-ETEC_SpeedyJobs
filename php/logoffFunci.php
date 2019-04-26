@@ -1,0 +1,14 @@
+<?php
+session_start();
+unset($_SESSION['codiFunci']);
+unset($_SESSION['usuarioFunci']);
+unset($_SESSION['nome_usuarioFunci']);
+unset($_SESSION['dataNasFunci']);
+unset($_SESSION['sexFunci']);
+unset($_SESSION['fotoFunci']);
+unset($_SESSION['prof']);
+unset($_SESSION['codiFunciChat']);
+unset($_SESSION['loginFunci']);
+unset($_SESSION['nomeCompletoFunci']);
+header('location:../index.php');
+?>

@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	border: none;
+	outline: none;
+	font-weight: 300;
+	box-sizing: border-box;
+	color: black;
+}
+
+
+body{
+    background: linear-gradient(#f6f6f7, #a6b1bb);
+    background-size:cover;
+	color: black;
+	text-align:  center;
+}
+
+h1{
+	font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: #6a6e73 ;
+    margin-bottom: 35px;
+}
+h2, .h2 {
+    font-size: 50px;
+    text-align:center;
+    margin-bottom: 50px;
+    margin-top: 30px ;
+    color: black;
+    text-decoration: none;
+    outline:none;
+    margin-bottom: 100px ;
+    font-family: 'Raleway', sans-serif;
+}
+h3{
+	font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 200px ;
+    font-family: 'Raleway', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+
+}
+::-webkit-scrollbar-thumb {
+    background: #6a6e73;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a6b1bb;
+}
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/*-----CADASTRAR E LOGAR-----*/
+.form-signin {
+    max-width: 650px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.btn-success {
+    width: 34%;
+    height: 40px;
+    color: #fff;
+    border-color:rgb(15, 119, 192);
+    background-color: rgb(15, 119, 192);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-left: 50px ;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    margin-bottom: 163px;
+
+}
+.btn-success:hover {
+    color: #fff;
+    background-color:rgb(18, 142, 229);
+}
+.btn-success2 {
+    width: 34%;
+    height: 40px;
+    color: #fff;
+    border-color:rgb(8, 163, 110);
+    background-color: rgb(8, 163, 110);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    margin-bottom: 163px;
+}
+.btn-success2:hover {
+    color: #fff;
+    background-color:rgb(14, 209, 143);
+    box-shadow:none;
+}
